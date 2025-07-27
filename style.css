@@ -103,12 +103,12 @@ header {
     position: absolute;
     padding-left: 9px;
     padding-bottom: 10px;
-    width: 35%;
+    height: 35%;
 }
 
 .slogan {
     background-color: transparent;
-    width: 60%;
+    height: 70%;
     animation-name: rotate;
     animation-duration: 25s;
     animation-iteration-count: infinite;
