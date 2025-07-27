@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a; 
+
+}
+
+li, a, button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:rgb(222, 0, 140);
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 13rem 1fr;
+    grid-template-rows: 4rem 40rem 5rem 40rem 4rem;
+    grid-template-areas: 
+        "top-bar top-bar"
+        "header header"
+        "side-bar side-bar"
+        "main main"
+        "footer footer";
+}
+
+@media (min-width: 38rem) {
+    .container {
+        grid-template-columns: 13rem 1fr;
+        grid-template-rows: 4rem 40rem 40rem 4rem;
+        grid-template-areas: 
+            "top-bar top-bar"
+            "header header"
+            "side-bar main"
+            "footer footer";
+    }
+}
+
+.top-bar {
+    /*background-color: rgb(255, 202, 30);*/
+    grid-area: top-bar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.site-name {
+    cursor: pointer;
+    margin-right: 95px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px 0 0;
+}
+
+.nav-links li:nth-child(3){
+    padding: 0;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: rgb(152, 0, 96);
+}
+
+button {
+    flex-basis: 0;
+    padding: 10px 25px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 38rem) {
+    
+}
+
+header {
+    /*background-color: aquamarine;*/
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    padding-left: 9px;
+    padding-bottom: 10px;
+    width: 35%;
+}
+
+.slogan {
+    background-color: transparent;
+    width: 60%;
+    animation-name: rotate;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg);}
+    to{ transform: rotate(360deg);}
+}
+
+.side-bar {
+    background-color: blue;
+    grid-area: side-bar;
+}
+
+main {
+    background-color: blueviolet;
+    grid-area: main;
+}
+
+footer {
+    background-color: black;
+    grid-area: footer;
+}
