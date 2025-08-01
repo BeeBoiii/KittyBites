@@ -16,8 +16,8 @@ li, a, button {
 
 .container {
     display: grid;
-    grid-template-columns: 13rem 1fr;
-    grid-template-rows: 4rem 40rem 5rem 40rem 4rem;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: 4rem 38rem 5rem 38rem 5rem;
     grid-template-areas: 
         "top-bar top-bar"
         "header header"
@@ -29,7 +29,7 @@ li, a, button {
 @media (min-width: 38rem) {
     .container {
         grid-template-columns: 13rem 1fr;
-        grid-template-rows: 4rem 40rem 40rem 4rem;
+        grid-template-rows: 4rem 40rem 40rem 5rem;
         grid-template-areas: 
             "top-bar top-bar"
             "header header"
@@ -47,25 +47,21 @@ li, a, button {
     padding: 30px 5%;
 }
 
-.site-name {
-    cursor: pointer;
-    margin-right: 95px;
-}
-
 .nav-links {
     list-style: none;
 }
 
-.nav-links li{
+.nav-links li {
     display: inline-block;
     padding: 0 20px 0 0;
 }
 
-.nav-links li:nth-child(3){
-    padding: 0;
+.nav-links li:nth-child(1), .nav-links li:nth-child(3) {
+    display: none;
 }
 
 .nav-links li a {
+    padding: 10px;
     transition: all 0.3s ease 0s;
 }
 
@@ -73,22 +69,56 @@ li, a, button {
     color: rgb(152, 0, 96);
 }
 
-button {
-    flex-basis: 0;
-    padding: 10px 25px;
-    background-color: rgb(255, 255, 255, 1);
-    border: none;
-    border-radius: 50px;
+.site-name {
     cursor: pointer;
-    transition: all 0.3s ease 0s;
 }
 
-button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+.icon img {
+    padding: 0 10px 0 60px;
+    margin-left: 0px;
+    height: 20px;
 }
+
+.top-bar .text {
+    display: none;
+}
+
+
 
 @media (min-width: 38rem) {
+    .nav-links li a {
+        padding: 0px;
+    }
+
+    .nav-links li:nth-child(1), .nav-links li:nth-child(3) {
+        display: initial;
+    }
     
+    .site-name {
+        padding-right: 140px;
+    }
+    
+    .icon {
+        display: none;
+    }
+    
+    .top-bar .text {
+        display: initial;
+    }
+    
+    button {
+        flex-basis: 0;
+        padding: 10px 25px;
+        background-color: rgba(255, 255, 255, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+}
+
+    button:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+    } 
 }
 
 header {
@@ -102,22 +132,23 @@ header {
 .logo {
     position: absolute;
     padding-left: 9px;
-    padding-bottom: 10px;
-    height: 35%;
+    padding-bottom: 60px;
+    height: 13rem;
 }
 
 .slogan {
     background-color: transparent;
-    height: 70%;
+    height: 23rem;
     animation-name: rotate;
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    margin-bottom: 50px;
 }
 
 @keyframes rotate{
-    from{ transform: rotate(-360deg);}
-    to{ transform: rotate(360deg);}
+    from{ transform: rotate(360deg);}
+    to{ transform: rotate(-360deg);}
 }
 
 .side-bar {
@@ -131,6 +162,32 @@ main {
 }
 
 footer {
-    background-color: black;
+    /*background-color: black;*/
     grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-icons {
+    width: 3rem;
+}
+
+.icon-stroke {
+    stroke: rgba(222, 0, 140, 0.1);
+    fill: rgb(222, 0, 140);
+}
+
+#ins-icon {
+    margin-left: 0.5rem;
+}
+
+#weibo-icon {
+    margin-right: 0.5rem;
+}
+
+.email {
+    font-size: 1.3rem;
+    color: rgb(222, 0, 140);
+    margin-bottom: 5px;
 }
