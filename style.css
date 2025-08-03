@@ -71,6 +71,9 @@ li, a, button {
 
 .site-name {
     cursor: pointer;
+    font-family: "Bangers", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.5px;
 }
 
 .icon img {
