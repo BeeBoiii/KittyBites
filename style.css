@@ -87,8 +87,6 @@ li, a, button {
     display: none;
 }
 
-
-
 @media (min-width: 38rem) {
     .nav-links li a {
         padding: 0px;
@@ -145,6 +143,17 @@ header {
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+@media (min-width: 38rem) {
+    .logo {
+        height: 12rem;
+    }
+
+    .slogan {
+        max-height: 70%;
+        width: auto;
+    }
 }
 
 @keyframes rotate{
