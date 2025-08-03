@@ -77,6 +77,13 @@ li, a, button {
     text-shadow: -4px 3px black;
 }
 
+.navbar-icons {
+    width: 1.5rem;
+    margin-left: 50px;
+}
+
+
+
 .icon img {
     padding: 0 10px 0 60px;
     margin-left: 0px;
@@ -100,7 +107,7 @@ li, a, button {
         padding-right: 140px;
     }
     
-    .icon {
+    .navbar-icons {
         display: none;
     }
     
@@ -215,6 +222,11 @@ footer {
 .icon-stroke {
     stroke: rgba(222, 0, 140, 0.1);
     fill: rgb(222, 0, 140);
+    transition: all 0.3s ease 0s;
+}
+
+.icon:hover .icon-stroke {
+    fill: rgb(152, 0, 96);
 }
 
 #ins-icon {
