@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     background-color: #24252a; 
-
+    overflow: hidden;
 }
 
 li, a, button {
