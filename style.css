@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     background-color: #24252a; 
-    overflow: hidden;
 }
 
 li, a, button {
@@ -136,6 +135,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .logo {
@@ -150,6 +150,7 @@ header {
     animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    
 }
 
 @media (min-width: 38rem) {
