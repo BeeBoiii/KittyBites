@@ -78,7 +78,8 @@ li, a, button {
 
 .navbar-icons {
     width: 1.5rem;
-    margin-left: 50px;
+    
+    margin: 0 10px 0 50px;
 }
 
 
