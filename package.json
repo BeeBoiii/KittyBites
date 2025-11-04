@@ -1,0 +1,20 @@
+{
+  "name": "templateweb",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/BeeBoiii/TemplateWeb#readme",
+  "bugs": {
+    "url": "https://github.com/BeeBoiii/TemplateWeb/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeeBoiii/TemplateWeb.git"
+  },
+  "license": "ISC",
+  "author": "WittyKitty",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "mocha"
+  }
+}
